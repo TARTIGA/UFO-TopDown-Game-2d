@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+
 
 public class PlayerControllerNew : MonoBehaviour
 {
@@ -42,6 +44,14 @@ public class PlayerControllerNew : MonoBehaviour
             Vector2 movement = new Vector2(moveHorizontal, moveVertical);
             rb2d.AddForce(movement * speed);
         }
+
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+
     }
 
     /// <summary>
@@ -74,6 +84,15 @@ public class PlayerControllerNew : MonoBehaviour
     }
 
     void SetText()
+    {
+        countText.text = "Count: " + count.ToString();
+        if (count >= winCount)
+        {
+            winText.text = "YOU WIN!";
+        }
+    }
+
+    void Restart()
     {
         countText.text = "Count: " + count.ToString();
         if (count >= winCount)
