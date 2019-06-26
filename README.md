@@ -4,9 +4,9 @@
 
 link - https://unity3d.com/ru/learn/tutorials/s/2d-ufo-tutorial
 
-<img src="https://s3.gifyu.com/images/2D_UFO_GAME.gif" width="300" height="300" />
+![teamwork-cat-dog](https://github.com/davidtheclark/gifs/blob/master/teamwork-cat-dog.gif)
 ![](https://gifyu.com/image/E9Me)
-![](/2D_UFO_GAME.gif?raw=true "Title")
+![](/2D_UFO_GAME.gif?raw=true 'Title')
 ![](http://i.imgur.com/OUkLi.gif)
 
 ## TODO:
