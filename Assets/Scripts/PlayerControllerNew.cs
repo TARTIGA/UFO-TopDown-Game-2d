@@ -15,7 +15,7 @@ public class PlayerControllerNew : MonoBehaviour
     private int count;
     private bool gameOver;
 
-    private int winCount = 10;
+    public int winCount = 10;
 
 
     /// <summary>
@@ -52,7 +52,7 @@ public class PlayerControllerNew : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            Time.timeScale = 1;
+            SetPause(false);
         }
     }
 
@@ -82,7 +82,7 @@ public class PlayerControllerNew : MonoBehaviour
         {
             gameOver = true;
             gameOverText.gameObject.SetActive(true);
-            Time.timeScale = 0;
+            SetPause(true);
         }
     }
 
@@ -91,7 +91,13 @@ public class PlayerControllerNew : MonoBehaviour
         countText.text = "Count: " + count.ToString();
         if (count >= winCount)
         {
-            winText.text = "YOU WIN!";
+            winText.text = "YOU WIN! \n\r press 'R' to restart Level";
+            SetPause(true);
         }
+    }
+
+    void SetPause(bool pause)
+    {
+        Time.timeScale = pause ? 0 : 1;
     }
 }
