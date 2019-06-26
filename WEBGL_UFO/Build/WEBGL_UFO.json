@@ -1,0 +1,17 @@
+{
+"companyName": "DefaultCompany",
+"productName": "2D Ufo Learn",
+"productVersion": "1.0",
+"dataUrl": "WEBGL_UFO.data.unityweb",
+"asmCodeUrl": "WEBGL_UFO.asm.code.unityweb",
+"asmMemoryUrl": "WEBGL_UFO.asm.memory.unityweb",
+"asmFrameworkUrl": "WEBGL_UFO.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": true,
+"multithreading": false,
+"unityVersion": "2019.1.8f1"
+}
