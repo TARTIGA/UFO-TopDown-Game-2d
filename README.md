@@ -4,7 +4,7 @@
 
 link - https://unity3d.com/ru/learn/tutorials/s/2d-ufo-tutorial
 
-![alt text](https://pbs.twimg.com/media/CnQF2bRVIAAc51X.jpg:large)
+![alt text](https://gifyu.com/image/E9Me)
 
 ## TODO:
 
