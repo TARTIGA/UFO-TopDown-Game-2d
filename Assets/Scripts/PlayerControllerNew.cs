@@ -39,19 +39,21 @@ public class PlayerControllerNew : MonoBehaviour
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-        if (!gameOver)
-        {
-            Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-            rb2d.AddForce(movement * speed);
-        }
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        rb2d.AddForce(movement * speed);
 
+    }
 
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Time.timeScale = 1;
         }
-
-
     }
 
     /// <summary>
@@ -80,19 +82,11 @@ public class PlayerControllerNew : MonoBehaviour
         {
             gameOver = true;
             gameOverText.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
     void SetText()
-    {
-        countText.text = "Count: " + count.ToString();
-        if (count >= winCount)
-        {
-            winText.text = "YOU WIN!";
-        }
-    }
-
-    void Restart()
     {
         countText.text = "Count: " + count.ToString();
         if (count >= winCount)
