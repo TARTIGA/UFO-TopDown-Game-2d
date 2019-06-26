@@ -5,7 +5,8 @@
 link - https://unity3d.com/ru/learn/tutorials/s/2d-ufo-tutorial
 
 <img src="https://s3.gifyu.com/images/2D_UFO_GAME.gif" width="300" height="300" />
-![](https://s3.gifyu.com/images/2D_UFO_GAME.gif)
+![](https://gifyu.com/image/E9Me)
+![alt-text](2D_UFO_GAME.gif)
 
 ## TODO:
 
