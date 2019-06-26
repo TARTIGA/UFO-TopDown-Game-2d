@@ -2,9 +2,11 @@
 
 ## Simple Learning Project
 
-link - https://unity3d.com/ru/learn/tutorials/s/2d-ufo-tutorial
+###[Unity Tutorial](https://unity3d.com/ru/learn/tutorials/s/2d-ufo-tutorial)
 
 ![](/2D_UFO_GAME.gif?raw=true 'UFO')
+
+###[Play GAME](http://htmlpreview.github.io/?https://github.com/TARTIGA/2dUFOTopDownGame/blob/master/WEBGL_UFO/index.html)
 
 ## TODO:
 
